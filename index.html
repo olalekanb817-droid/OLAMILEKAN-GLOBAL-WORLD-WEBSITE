@@ -30,21 +30,21 @@
     header { position: sticky; top: 0; z-index: 20; background: rgba(11,11,11,.9); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.07); }
     .nav-wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
     .brand { display: inline-flex; align-items: center; gap: 12px; min-width: max-content; }
-    .brand-mark { width: 40px; height: 40px; border: 1px solid var(--gold); color: var(--gold-light); display: grid; place-items: center; font-family: Georgia, serif; font-size: 1.2rem; transform: rotate(45deg); }
+    .brand-mark { width: 40px; height: 40px; border: 1px solid var(--gold); color: var(--gold-light); display: grid; place-items: center; font-family: Georgia, serif; font-size: 1.2rem; transform: rotate(-45deg); }
     .brand-mark span { transform: rotate(-45deg); }
     .brand-name { display: block; font-size: .79rem; letter-spacing: .14em; line-height: 1.3; font-weight: 700; }
     .brand-sub { display: block; color: var(--muted); font-size: .61rem; letter-spacing: .2em; margin-top: 3px; }
     .nav-links { display: flex; align-items: center; gap: 30px; color: #d5d1c8; font-size: .84rem; }
     .nav-links a:hover, .footer-links a:hover { color: var(--gold-light); }
-    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid var(--gold); background: var(--gold); color: #17130b; font-weight: 700; padding: 12px 19px; transition: .2s ease; }
+    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid var(--gold); background: var(--gold); color: #17130b; font-weight: 700; padding: 13px 20px; border-radius: 999px; transition: .2s ease; }
     .nav-cta { padding: 10px 16px; font-size: .8rem; }
     .nav-cta:hover, .button:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); }
     .button.secondary { background: transparent; color: var(--white); border-color: rgba(255,255,255,.3); }
     .button.secondary:hover { border-color: var(--gold); color: var(--gold-light); }
     .menu-toggle { display: none; border: 1px solid var(--line); background: transparent; color: var(--white); padding: 8px 11px; cursor: pointer; }
     .hero { position: relative; overflow: hidden; min-height: 650px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
-    .hero::before { content: ""; position: absolute; width: 700px; height: 700px; border: 1px solid rgba(214,173,97,.13); border-radius: 50%; right: -120px; top: -40px; box-shadow: 0 0 0 52px rgba(214,173,97,.025), 0 0 0 110px rgba(214,173,97,.02); }
-    .hero::after { content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%; right: 68px; top: 114px; background: radial-gradient(circle at 35% 30%, #5d482b, #1d1912 45%, #0b0b0b 72%); box-shadow: inset -35px -25px 80px #050505, 0 0 100px rgba(214,173,97,.12); opacity: .8; }
+    .hero::before { content: ""; position: absolute; width: 700px; height: 700px; border: 1px solid rgba(214,173,97,.13); border-radius: 50%; right: -120px; top: -40px; box-shadow: 0 0 0 52px rgba(214,173,97,.05); }
+    .hero::after { content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%; right: 68px; top: 114px; background: radial-gradient(circle at 35% 30%, #5d482b, #1d1912 45%, rgba(0,0,0,0) 70%); }
     .hero-content { position: relative; z-index: 1; width: 58%; padding: 88px 0 100px; }
     .eyebrow { color: var(--gold-light); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; font-weight: 700; }
     h1, h2, h3, p { margin-top: 0; }
@@ -67,10 +67,10 @@
     .service-card p { color: var(--muted); font-size: .88rem; margin: 0; max-width: 330px; }
     .service-card::after { content: "↗"; position: absolute; right: 25px; top: 23px; color: var(--gold); font-size: 1.15rem; }
     .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
-    .story-art { min-height: 430px; position: relative; border: 1px solid var(--line); background: radial-gradient(ellipse at 50% 40%, rgba(214,173,97,.16), transparent 49%), linear-gradient(135deg,#191710,#0d0d0d 60%); display: grid; place-items: center; overflow: hidden; }
+    .story-art { min-height: 430px; position: relative; border: 1px solid var(--line); background: radial-gradient(ellipse at 50% 40%, rgba(214,173,97,.16), transparent 49%), linear-gradient(135deg, rgba(214,173,97,.1), transparent 60%), #0d0d0d; display: grid; place-items: center; }
     .story-art::before, .story-art::after { content: ""; position: absolute; border: 1px solid rgba(214,173,97,.23); border-radius: 50%; width: 280px; height: 280px; }
     .story-art::after { width: 380px; height: 380px; }
-    .globe { z-index: 1; width: 150px; height: 150px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold-light); display: grid; place-items: center; font-size: 3.4rem; background: radial-gradient(circle at 35% 30%, rgba(214,173,97,.22), rgba(11,11,11,.9) 72%); box-shadow: 0 0 70px rgba(214,173,97,.15); }
+    .globe { z-index: 1; width: 150px; height: 150px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold-light); display: grid; place-items: center; font-size: 3.4rem; background: radial-gradient(circle at 30% 30%, rgba(214,173,97,.18), rgba(11,11,11,.8) 60%); }
     .story-copy p { color: var(--muted); margin: 22px 0; }
     .check-list { list-style: none; padding: 0; margin: 25px 0 0; display: grid; gap: 13px; color: #dedbd4; font-size: .91rem; }
     .check-list li::before { content: "✦"; color: var(--gold); margin-right: 12px; }
@@ -78,7 +78,7 @@
     .quote-band p { font-family: Georgia, serif; font-size: clamp(2rem, 4.4vw, 3.8rem); margin: 0; }
     .quote-band span { color: var(--gold-light); }
     .contact { background: #101010; border-top: 1px solid rgba(255,255,255,.06); }
-    .contact-panel { display: grid; grid-template-columns: 1.1fr .9fr; gap: 55px; border: 1px solid var(--line); background: linear-gradient(120deg, #191710, #101010 66%); padding: clamp(30px, 6vw, 68px); }
+    .contact-panel { display: grid; grid-template-columns: 1.1fr .9fr; gap: 55px; border: 1px solid var(--line); background: linear-gradient(120deg, #191710, #101010 66%); padding: clamp(30px, 6vw, 64px); }
     .contact-panel p { color: var(--muted); max-width: 480px; margin: 18px 0 26px; }
     .contact-details { display: grid; gap: 17px; align-content: center; }
     .contact-item { border-bottom: 1px solid rgba(255,255,255,.1); padding-bottom: 16px; }
@@ -88,7 +88,7 @@
     footer { padding: 28px 0; border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); font-size: .78rem; }
     .footer-wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
     .footer-links { display: flex; gap: 20px; }
-    .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 15; width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: #1fae64; color: white; font-size: 1.5rem; box-shadow: 0 8px 28px rgba(0,0,0,.4); transition: transform .2s; }
+    .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 15; width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: #1fae64; color: white; font-size: 1.55rem; box-shadow: 0 10px 28px rgba(18, 160, 90, .3); }
     .wa-float:hover { transform: translateY(-3px); }
     @media (max-width: 850px) {
       .nav-links { gap: 16px; }
@@ -103,7 +103,7 @@
       .nav-wrap { min-height: 68px; }
       .menu-toggle { display: block; margin-left: auto; }
       .nav-cta { display: none; }
-      .nav-links { display: none; position: absolute; top: 68px; left: 0; right: 0; padding: 18px 24px 24px; background: #0b0b0b; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; }
+      .nav-links { display: none; position: absolute; top: 68px; left: 0; right: 0; padding: 18px 24px 24px; background: #0b0b0b; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; }
       .nav-links.open { display: flex; }
       .nav-links a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.06); }
       .hero { min-height: 610px; }
@@ -132,7 +132,7 @@
         <span class="brand-mark"><span>O</span></span>
         <span><span class="brand-name">OLAMILEKAN</span><span class="brand-sub">GLOBAL WORLD</span></span>
       </a>
-      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav class="nav-links" id="main-nav" aria-label="Main navigation">
         <a href="#home">Home</a><a href="#services">What We Do</a><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
@@ -145,7 +145,7 @@
         <div class="hero-content">
           <div class="eyebrow">Ideas without borders</div>
           <h1>One world.<br><em>Your vision.</em></h1>
-          <p class="hero-copy">A connected world of technology, commerce and opportunity. We bring digital solutions, African products, online shopping, logistics and international trade together.</p>
+          <p class="hero-copy">A connected world of technology, commerce and opportunity. We bring digital solutions, African products, online shopping, logistics and international trade together for growth.</p>
           <div class="hero-actions">
             <a class="button" href="https://wa.me/2348025592137" target="_blank" rel="noopener noreferrer">Start a conversation <span aria-hidden="true">↗</span></a>
             <a class="button secondary" href="#services">Explore what we do</a>
@@ -178,9 +178,9 @@
         <div class="story-copy">
           <div class="eyebrow">A global outlook</div>
           <h2>Local roots.<br>Worldwide vision.</h2>
-          <p>OLAMILEKAN GLOBAL WORLD is built around a simple idea: opportunity grows when people, products and ideas can connect. Our work spans technology, online retail, African products, e-commerce, logistics and international trade.</p>
+          <p>OLAMILEKAN GLOBAL WORLD is built around a simple idea: opportunity grows when people, products and ideas can connect. Our work spans technology, online retail, African products, e-commerce and logistics—linking everyday needs with global possibility.</p>
           <p>We bring a forward-looking, customer-minded approach to every connection—and a belief that the next opportunity can come from anywhere.</p>
-          <ul class="check-list"><li>Technology and commerce in one connected vision</li><li>A platform for African products and global exchange</li><li>Focused on making business more accessible</li></ul>
+          <ul class="check-list"><li>Technology and commerce in one connected vision</li><li>A platform for African products and global exchange</li><li>Focused on making business more accessible nationwide and beyond</li></ul>
         </div>
       </div>
     </section>
@@ -213,17 +213,46 @@
   <script>
     const menuButton = document.querySelector('.menu-toggle');
     const navigation = document.querySelector('.nav-links');
-    menuButton.addEventListener('click', () => {
-      const isOpen = navigation.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(isOpen));
-      menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-    });
-    navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-      navigation.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Open navigation menu');
-    }));
-    document.querySelector('#year').textContent = new Date().getFullYear();
+    const yearElement = document.querySelector('#year');
+
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+    if (menuButton && navigation) {
+      const setMenuState = (isOpen) => {
+        navigation.classList.toggle('open', isOpen);
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      };
+
+      menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        setMenuState(!isOpen);
+      });
+
+      navigation.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setMenuState(false));
+      });
+
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Node)) {
+          return;
+        }
+
+        const clickedInsideNav = navigation.contains(target) || menuButton.contains(target);
+        if (!clickedInsideNav) {
+          setMenuState(false);
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          setMenuState(false);
+        }
+      });
+    }
   </script>
 </body>
 </html>
